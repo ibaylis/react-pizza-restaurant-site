@@ -1,0 +1,28 @@
+{
+  "name": "react-pizza-restaurant-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "chokidar": "^3.0.2",
+    "fsevents": "^2.0.7",
+    "next": "^8.1.0",
+    "node-pre-gyp": "^0.13.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-promise": "^0.6.0",
+    "watchpack": "^1.6.0",
+    "yarn": "^1.17.3"
+  }
+}
