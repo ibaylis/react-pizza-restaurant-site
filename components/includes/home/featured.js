@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Featured = () => {
     return (
-        <Link href="/store">
+        <Link href="/pizzas/2">
             <a>
                 <div
                     className="featured_container"

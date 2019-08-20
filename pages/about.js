@@ -29,6 +29,10 @@ class About extends Component {
                                     <div className="bottom">
                                         <h2>Our Chefs</h2>
                                         <h3>Pizzeria</h3>
+                                        <br />
+                                        <p>
+                                            Donec et sollicitudin ligula. Mauris vitae sodales turpis. Etiam laoreet dolor vel dui feugiat, nec euismod risus sagittis. Integer vehicula fringilla tempor. Phasellus finibus massa in mauris dignissim, vitae pretium ex accumsan. Morbi tempor viverra turpis, vitae aliquam eros faucibus sit amet.Duis aliquet vehicula nisi, id elementum neque consequat et. Praesent lobortis sollicitudin magna nec condimentum. Quisque lectus dui, vehicula eu libero nec, feugiat consectetur nibh. Morbi feugiat volutpat hendrerit. Ut nulla ligula, semper ac commodo quis, laoreet ac lectus. Praesent sed ante maximus, congue ligula in, gravida risus. Fusce imperdiet tellus non interdum tempor. Nam ornare tellus non vestibulum finibus. Nullam iaculis erat scelerisque sapien facilisis, at efficitur nibh suscipit. Fusce in eros mattis, placerat urna ut, malesuada mi.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +45,14 @@ class About extends Component {
                                             background:`url('/static/images/store.jpg')`
                                         }}
                                     >
-
+                                    </div>
+                                    <div className="bottom">
+                                        <h2>Store</h2>
+                                        <h3>Pizzeria</h3>
+                                        <br />
+                                        <p>
+                                        Nunc laoreet mollis lacus, ac fringilla neque porta non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ut nibh non lorem dictum euismod. Duis aliquet vehicula nisi, id elementum neque consequat et. Praesent lobortis sollicitudin magna nec condimentum. Quisque lectus dui, vehicula eu libero nec, feugiat consectetur nibh. Morbi feugiat volutpat hendrerit. Ut nulla ligula, semper ac commodo quis, laoreet ac lectus. Praesent sed ante maximus, congue ligula in, gravida risus. Fusce imperdiet tellus non interdum tempor. Nam ornare tellus non vestibulum finibus. Nullam iaculis erat scelerisque sapien facilisis, at efficitur nibh suscipit. Fusce in eros mattis, placerat urna ut, malesuada mi. Sed semper varius metus, vitae sodales magna pharetra a.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

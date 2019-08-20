@@ -7,7 +7,15 @@ const PizzasList = () => {
             <div className="pizzas_wrapper">
                 <div className="articles">
 {/* */}
-                    <Link href="/">
+                    <Link 
+                        as={`/pizzas/1`}
+                        href={{
+                            pathname: '/pizzas',
+                            query: {
+                                pizzaId: 1
+                            }
+                        }}
+                    >
                         <a>
                             <div className="item">
                                 <div
@@ -27,7 +35,15 @@ const PizzasList = () => {
                     </Link>
 
 {/* */}
-                    <Link href="/">
+                    <Link 
+                        as={`/pizzas/2`}
+                        href={{
+                            pathname: '/pizzas',
+                            query: {
+                                pizzaId: 2
+                            }
+                        }}
+                    >
                         <a>
                             <div className="item">
                                 <div
@@ -46,7 +62,15 @@ const PizzasList = () => {
                         </a>
                     </Link>
 {/* */}
-                    <Link href="/">
+                    <Link 
+                        as={`/pizzas/3`}
+                        href={{
+                            pathname: '/pizzas',
+                            query: {
+                                pizzaId: 3
+                            }
+                        }}
+                    >
                         <a>
                             <div className="item">
                                 <div
@@ -65,7 +89,15 @@ const PizzasList = () => {
                         </a>
                     </Link>
 {/* */}
-                    <Link href="/">
+                    <Link 
+                        as={`/pizzas/4`}
+                        href={{
+                            pathname: '/pizzas',
+                            query: {
+                                pizzaId: 4
+                            }
+                        }}
+                    >
                         <a>
                             <div className="item">
                                 <div
