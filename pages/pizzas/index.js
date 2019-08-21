@@ -1,21 +1,48 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Pizzas extends Component {
     static async getInitialProps({query}) {
         let pizzaData;
-        pizzaData = query.pizzaId;
+        
+        try {
+            const response = await axios.get(`http://localhost:3000/api/v1/pizza/${query.pizzaName}`)
+            pizzaData = response.data[0];
+        } catch {
+            console.error('Error')
+        }
 
         return {
             pizzaData
         }
     }
     render() {
+        const { pizzaData } = this.props;
         return (
             <>
-                The pizza ID is {this.props.pizzaData}
+                <div className="pizza_page">
+                    <div
+                        className="top"
+                        style={{
+                            background:`url('/static/images/${pizzaData.image}')`
+                        }}
+                    >
+                    </div>
+                    <div className="middle">
+                        <h1>{pizzaData.name}</h1>
+                        <div className="description">
+                            {pizzaData.fullDesc}
+                        </div>
+                        <div className="price">
+                            Get this pizza for ${pizzaData.price}
+                        </div>
+                    </div>
+                </div>
             </>
         )
     }
 }
 
 export default Pizzas;
+
+//http://localhost:3000/api/v1/pizza

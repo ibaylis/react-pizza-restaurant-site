@@ -1,12 +1,55 @@
 import React from 'react';
 import Link from 'next/link';
 
-const PizzasList = () => {
+const PizzasList = (props) => {
+
+    const showList = () => (
+        props.pizzas.map(pizza => {
+            if(pizza.pod !== true) {
+                return(
+
+                    <Link 
+                        as={`/pizzas/${pizza.idName}`}
+                        href={{
+                            pathname: '/pizzas',
+                            query: {
+                                pizzaName: pizza.idName
+                            }
+                        }}
+                        key={pizza.idName}
+                    >
+                        <a>
+                            <div className="item">
+                                <div
+                                    className="inner-item"
+                                    style={{
+                                        background:`url('/static/images/${pizza.image}')`
+                                    }}
+                                > 
+                                    <div className="overlay"></div>
+                                    <div className="item-nfo">
+                                        <h3>{pizza.name}</h3>
+                                        <p>{pizza.shortDesc}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </Link>
+
+
+                )
+            }
+        })
+    )
+
+
     return (
         <>
             <div className="pizzas_wrapper">
                 <div className="articles">
-{/* */}
+                {showList()}
+{/* 
+
                     <Link 
                         as={`/pizzas/1`}
                         href={{
@@ -34,7 +77,8 @@ const PizzasList = () => {
                         </a>
                     </Link>
 
-{/* */}
+
+
                     <Link 
                         as={`/pizzas/2`}
                         href={{
@@ -61,7 +105,7 @@ const PizzasList = () => {
                             </div>
                         </a>
                     </Link>
-{/* */}
+
                     <Link 
                         as={`/pizzas/3`}
                         href={{
@@ -88,7 +132,7 @@ const PizzasList = () => {
                             </div>
                         </a>
                     </Link>
-{/* */}
+
                     <Link 
                         as={`/pizzas/4`}
                         href={{
@@ -115,6 +159,7 @@ const PizzasList = () => {
                             </div>
                         </a>
                     </Link>
+*/}
                 </div>
             </div>
         </>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class About extends Component {
     render() {
+        const { siteData } = this.props;
         return (
             <>
                 <div className="title_page">
@@ -53,6 +54,11 @@ class About extends Component {
                                         <p>
                                         Nunc laoreet mollis lacus, ac fringilla neque porta non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ut nibh non lorem dictum euismod. Duis aliquet vehicula nisi, id elementum neque consequat et. Praesent lobortis sollicitudin magna nec condimentum. Quisque lectus dui, vehicula eu libero nec, feugiat consectetur nibh. Morbi feugiat volutpat hendrerit. Ut nulla ligula, semper ac commodo quis, laoreet ac lectus. Praesent sed ante maximus, congue ligula in, gravida risus. Fusce imperdiet tellus non interdum tempor. Nam ornare tellus non vestibulum finibus. Nullam iaculis erat scelerisque sapien facilisis, at efficitur nibh suscipit. Fusce in eros mattis, placerat urna ut, malesuada mi. Sed semper varius metus, vitae sodales magna pharetra a.
                                         </p>
+                                        <div>
+                                            <div>Phone: { siteData.phone }</div>
+                                            <div>Address: { siteData.address }</div>
+                                            <div>Email: { siteData.email }</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
