@@ -62,7 +62,18 @@ app.prepare()
             })
         })
 
+///// START MESSAGE /////
+        server.post('/api/v1/messages',(req,res)=>{
+            const msgData = req.body;
+            const messages = new Messages(msgData);
 
+            messages.save((err,message)=>{
+                if(err) { return res.status(422).send(err) }
+                return res.json({status:'DONE'})
+            })
+        })
+
+///// END MESSAGE /////
 
 
 
